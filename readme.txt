@@ -93,7 +93,6 @@ no-image-690-400.jpg self created GPLv2
 = 3.0.0 - Jul 13 2026 =
 * Updated: WordPress 7.0 compatibility
 * Updated: Requires PHP 7.4
-* Updated: Tested up to WordPress 7.0
 
 = 1.0.6 =
 * Update: Breadcrumb Library
