@@ -14,7 +14,6 @@ if ( ! class_exists( 'Click_Theme_Info' ) ) {
         private $page_title;
         private $menu_title;
         private $tabs;
-
         /**
          * Constructor.
          */
@@ -46,7 +45,6 @@ if ( ! class_exists( 'Click_Theme_Info' ) ) {
             $this->theme_version = $theme->get( 'Version' );
             $this->page_title    = isset( $this->config['page_title'] ) ? $this->config['page_title'] : esc_html__('Info','click'). $this->theme_name;
             $this->menu_title    = isset( $this->config['menu_title'] ) ? $this->config['menu_title'] : esc_html__('Info','click') . $this->theme_name;
-            $this->notification  = isset( $this->config['notification'] ) ? $this->config['notification'] : ( '<p>' . sprintf( __('Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.','click'), $this->theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->theme_slug . '-info' ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $this->theme_slug . '-info' ) ) . '" class="button" style="text-decoration: none;">' . sprintf( __('Get started with %s','click'), $this->theme_name ) . '</a></p>' );
             $this->tabs          = isset( $this->config['tabs'] ) ? $this->config['tabs'] : array();
         }
 
